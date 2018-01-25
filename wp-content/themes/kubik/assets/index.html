@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet"> 
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+		<a href="#" class="gunters-logo">Gunter's</a>
+		
+		<div class="header-caption">
+			<button class="hamburger hamburger--squeeze" type="button">
+			<span class="hamburger-box">
+			  <span class="hamburger-inner"></span>
+			</span>
+			</button>
+			<span>Story</span>
+		</div>
+		</div>
+		<nav class="navigation">
+			<ul>
+				<li><a href="#">event's</a></li>
+				<li><a href="#">gallery</a></li>
+				<li><a href="#">history</a></li>
+				<li><a href="#">about</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<article class="top-article">
+				<div class="double-line"></div>
+				<div class="row">
+					<div class="col-md-6 top-article-left">
+						<h3 class="rubric">travel</h3>
+						<h2 class="h2">Nullam id dolor id nibh ultricies vehicula ut id elit. </h2>
+						<p class="posting">
+							Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. 
+							<br>
+							<br>
+							Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+						<a href="#" class="button">Full Story <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="col-md-6">
+					<img src="img/blog-img.jpg" alt="пейзаж" class="article-img">
+					</div>
+				</div>
+			
+			</article>
+			<article class="middle-article">
+				<div class="double-line"><div class="triangle"></div></div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 wrap-article-2">
+						<h3 class="rubric">travel</h3>
+						<h2 class="h2">Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.  </h2>
+						<img src="img/blog-img-2.jpg" alt="пейзаж" class="article-img">
+						<div class="wrap-post-article">
+						<p class="posting">
+							Donec aredsed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla.
+							<br>
+							<br>
+							
+							Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+							<a href="#" class="button">Full Story <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+			<div class="player" id="player"></div>
+			<script></script>
+			 <script>
+			      // 2. This code loads the IFrame Player API code asynchronously.
+			      var tag = document.createElement('script');
+
+			      tag.src = "https://www.youtube.com/iframe_api";
+			      var firstScriptTag = document.getElementsByTagName('script')[0];
+			      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+			      // 3. This function creates an <iframe> (and YouTube player)
+			      //    after the API code downloads.
+			      var player;
+			      function onYouTubeIframeAPIReady() {
+			        player = new YT.Player('player', {
+			          height: '510',
+			          width: '100%',
+			          videoId: 'XjQvk_R20r4',
+			          events: {
+			            'onReady': onPlayerReady,
+			            'onStateChange': onPlayerStateChange
+			          }
+			        });
+			      }
+
+			      // 4. The API will call this function when the video player is ready.
+			      function onPlayerReady(event) {
+			       // event.target.playVideo();
+			      }
+
+			      // 5. The API calls this function when the player's state changes.
+			      //    The function indicates that when playing a video (state=1),
+			      //    the player should play for six seconds and then stop.
+			      var done = false;
+			      function onPlayerStateChange(event) {
+			        if (event.data == YT.PlayerState.PLAYING && !done) {
+			          setTimeout(stopVideo, 6000);
+			          done = true;
+			        }
+			      }
+			      function stopVideo() {
+			        player.stopVideo();
+			      }
+		    </script>
+		<div class="quotation">
+			<div class="double-line"><div class="triangle"></div></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="img/hatfield.jpg" alt="hatfield" class="article-img">
+							</div>
+							<div class="col-md-6">
+								<div class="wrap-rubric-quote">
+								<h3 class="rubric">Quote</h3>
+								<h2 class="h2">Fuck bitches as many as you can </h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-10 col-md-offset-2">
+								<div class="main-quote">
+									<p class="posting"><span>“</span>Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor <span>”</span></p>
+									<h3 class="h3">VEN diesel <span> 1962-2006</span></h3>
+									<a href="#" class="button">Full Story <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer style="background-image: url(img/footer-bg.jpg);">
+		<div class="wrap-form">
+			<p>Like what you're reading? Get weekly updates that will help you grow as a man.</p>
+			<form action="#" class="form">
+				<input type="text" name="name" value="name">
+				<input type="text" name="email" value="email">
+				<div><input type="submit" name="submit" value="subscribe" class="submit"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
+			</form>
+		</div>
+	</footer>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://use.fontawesome.com/24e0d8b0ae.js"></script>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
